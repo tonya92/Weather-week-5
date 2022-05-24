@@ -1,0 +1,56 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  min-width: 100px;
+  max-width: 1000px;
+  display: block;
+  margin: 70px auto;
+}
+.container {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(226, 240, 254) 0%,
+    rgb(255, 247, 228) 90%
+  );
+  border-radius: 10px;
+  padding: 50px;
+}
+.currentcity {
+  padding: 20px 0 20px 0;
+}
+.currenttemperature {
+  height: 120px;
+  padding: 20px 0 20px 0;
+}
+h1,
+h2,
+h3 {
+  font-size: 17px;
+}
+.col-4 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.card {
+  margin: 5px;
+}
+
+.weekday {
+  font-size: 20px;
+  font-style: bold;
+  text-align: center;
+}
+.weathericon {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.temperature {
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.form-control {
+  display: inline-block;
+  width: 50%;
+}
