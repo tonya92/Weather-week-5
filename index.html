@@ -17,8 +17,8 @@
 </head>
 
 <body>
-  <form id="searchcity">
-    <div class="container">
+  <div class="container">
+    <form id="searchcity">
       <div class="row search">
         <div class="col">
           <input class="form-control" type="text" placeholder="Enter your city" id="searchtown" />
@@ -28,99 +28,101 @@
           <button id="mylocationbutton" type="button" class="btn btn-primary">Current location</button>
         </div>
       </div>
-  </form>
+    </form>
 
-  <div class="row currentcity">
-    <div class="col-2">
-      <h1 id="citydisplay">
-        Kyiv,
+    <div class="row currentcity">
+      <div class="col-2">
+        <h1 id="citydisplay">
+          Kyiv,
+          <br />
+          Ukraine
+        </h1>
+      </div>
+      <div class="col-2">
+        <h2></h2>
+        <h3></h3>
+      </div>
+    </div>
+    <div class="row current-temperature">
+      <div class="col-2">
+        <span id="temp-cur">20</span>
+        <span>°</span>
+        <span class="switch"><a href="#" id="temp-c">C</a> |
+          <a href="#" id="temp-f">F</a>
+        </span>
+        <h4>
+          Clouds
+        </h4>
+      </div>
+      <div class="col-2">
+        <img src="img/cloud.svg" class="weathericon" alt="cloud" width="70px" />
+      </div>
+      <div class="col-4">
+        Precipitation: 31%
         <br />
-        Ukraine
-      </h1>
+        Wind: 1km/h
+      </div>
     </div>
-    <div class="col-2">
-      <h2></h2>
-      <h3></h3>
-    </div>
-  </div>
-  <div class="row current-temperature">
-    <div class="col-2">
-      <span id="temp-cur">20</span>
-      <span>°</span>
-      <span class="switch"><a href="#" id="temp-c">C</a> |
-        <a href="#" id="temp-f">F</a></span>
-      <h4>
-        Clouds
-      </h4>
-    </div>
-    <div class="col-2">
-      <img src="img/cloud.svg" class="weathericon" alt="cloud" width="70px" />
-    </div>
-    <div class="col-4">
-      Precipitation: 31%
-      <br />
-      Wind: 1km/h
-    </div>
-  </div>
 
-  <div class="row weekweather">
-    <div class="card" style="width: 100px; height: 150px;">
-      <p class="weekday">WED</p>
-      <img src="img/sun.svg" class="weathericon" alt="sun" width="40px" />
-      <p class="temperature">
-        20°C
-        <br />
-        17°C
-      </p>
+    <div class="row weekweather">
+      <div class="card" style="width: 100px; height: 150px;">
+        <p class="weekday">WED</p>
+        <img src="img/sun.svg" class="weathericon" alt="sun" width="40px" />
+        <p class="temperature">
+          20°C
+          <br />
+          17°C
+        </p>
+      </div>
+      <div class="card" style="width: 100px; height: 150px;">
+        <p class="weekday">THU</p>
+        <img src="img/cloud.svg" class="weathericon" alt="sun" width="40px" />
+        <p class="temperature">
+          15°C
+          <br />
+          8°C
+        </p>
+      </div>
+      <div class="card" style="width: 100px; height: 150px;">
+        <p class="weekday">FRI</p>
+        <img src="img/sun.svg" class="weathericon" alt="sun" width="40px" />
+        <p class="temperature">
+          20°C
+          <br />
+          16°C
+        </p>
+      </div>
+      <div class="card" style="width: 100px; height: 150px;">
+        <p class="weekday">SAT</p>
+        <img src="img/rain.svg" class="weathericon" alt="sun" width="40px" />
+        <p class="temperature">
+          14°C
+          <br />
+          7°C
+        </p>
+      </div>
+      <div class="card" style="width: 100px; height: 150px;">
+        <p class="weekday">SUN</p>
+        <img src="img/sun.svg" class="weathericon" alt="sun" width="40px" />
+        <p class="temperature">
+          24°C
+          <br />
+          17°C
+        </p>
+      </div>
+      <div class="card" style="width: 100px; height: 150px;">
+        <p class="weekday">MON</p>
+        <img src="img/sun.svg" class="weathericon" alt="sun" width="40px" />
+        <p class="temperature">
+          26°C
+          <br />
+          19°C
+        </p>
+      </div>
     </div>
-    <div class="card" style="width: 100px; height: 150px;">
-      <p class="weekday">THU</p>
-      <img src="img/cloud.svg" class="weathericon" alt="sun" width="40px" />
-      <p class="temperature">
-        15°C
-        <br />
-        8°C
-      </p>
-    </div>
-    <div class="card" style="width: 100px; height: 150px;">
-      <p class="weekday">FRI</p>
-      <img src="img/sun.svg" class="weathericon" alt="sun" width="40px" />
-      <p class="temperature">
-        20°C
-        <br />
-        16°C
-      </p>
-    </div>
-    <div class="card" style="width: 100px; height: 150px;">
-      <p class="weekday">SAT</p>
-      <img src="img/rain.svg" class="weathericon" alt="sun" width="40px" />
-      <p class="temperature">
-        14°C
-        <br />
-        7°C
-      </p>
-    </div>
-    <div class="card" style="width: 100px; height: 150px;">
-      <p class="weekday">SUN</p>
-      <img src="img/sun.svg" class="weathericon" alt="sun" width="40px" />
-      <p class="temperature">
-        24°C
-        <br />
-        17°C
-      </p>
-    </div>
-    <div class="card" style="width: 100px; height: 150px;">
-      <p class="weekday">MON</p>
-      <img src="img/sun.svg" class="weathericon" alt="sun" width="40px" />
-      <p class="temperature">
-        26°C
-        <br />
-        19°C
-      </p>
-    </div>
+    <a href="https://github.com/tonya92/Weather-week-5">Open source code</a>
+    <script src="src/script.js"></script>
   </div>
-  <a href="https://github.com/tonya92/Weather-week-5">Open source code</a>
-  <script src="src/script.js"></script>
 </body>
 
 </html>
