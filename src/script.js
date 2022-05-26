@@ -86,7 +86,6 @@ form.addEventListener("click", go);
 form.addEventListener("submit", go);
 
 function getCurrentLocation(event) {
-  console.log("suka yibana");
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
