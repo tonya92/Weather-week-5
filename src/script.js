@@ -14,7 +14,7 @@ let days = [
   "Wednesdey",
   "Thursday",
   "Friday",
-  "Saturday"
+  "Saturday",
 ];
 let day = days[now.getDay()];
 let hours = addZero(now.getHours());
@@ -86,6 +86,7 @@ form.addEventListener("click", go);
 form.addEventListener("submit", go);
 
 function getCurrentLocation(event) {
+  console.log("suka yibana");
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
